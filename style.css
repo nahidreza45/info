@@ -17,9 +17,9 @@ body {
 /* Header */
 header h1 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #4a90e2;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 /* Info Section */
@@ -37,6 +37,9 @@ header h1 {
     align-items: flex-start;
     gap: 20px;
     flex-wrap: wrap;
+    flex-direction: row-reverse; /* Change to row-reverse to place image on the right */
+    gap: 0; /* Remove gap after photo */
+    text-align: center;
 }
 
 /* Image */
@@ -45,6 +48,7 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .image img {
@@ -64,11 +68,13 @@ header h1 {
 /* Details */
 .details {
     flex: 1;
+    text-align: left;
+    width: 100%;
 }
 
 .details h2 {
     margin-bottom: 10px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #4a90e2;
 }
 
@@ -79,7 +85,7 @@ header h1 {
 }
 
 .details ul {
-    padding-left: 20px;
+    padding-left: 10px;
     list-style: square;
     color: #718096;
 }
@@ -114,17 +120,17 @@ header h1 {
     }
 
     .details ul {
-        padding-left: 10px; /* Reduce padding for better alignment */
+        padding-left: 10px;
     }
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 2rem; /* Reduce header font size on very small screens */
+        font-size: 1.8rem;
     }
 
     .details h2 {
-        font-size: 1.5rem; /* Adjust title size for small screens */
+        font-size: 1.3rem;
     }
 
     .details ul {
